@@ -1,7 +1,7 @@
 import streamlit as st
 import random
 import time
-# Abstraction + Encapsulation
+
 class BaseQuiz:
     def __init__(self):
         self.questions = []
@@ -9,8 +9,6 @@ class BaseQuiz:
     def get_random_question(self):
         return random.choice(self.questions)
 
-
-# Inheritance + Polymorphism
 class OOPQuiz(BaseQuiz):
     def __init__(self):
         super().__init__()
